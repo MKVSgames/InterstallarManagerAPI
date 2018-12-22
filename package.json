@@ -1,0 +1,23 @@
+{
+  "name": "interstallarmanagerapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKVSgames/InterstallarManagerAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKVSgames/InterstallarManagerAPI/issues"
+  },
+  "homepage": "https://github.com/MKVSgames/InterstallarManagerAPI#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
