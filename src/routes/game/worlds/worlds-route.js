@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const controller = require('./words-controller');
+const controller = require('./worlds-controller');
 
 const attach = (app) => {
     const router = new Router();
@@ -7,7 +7,7 @@ const attach = (app) => {
         .get('/', (req, res) => {
             controller.getAllWords(res);
         });
-    app.use('/words', router);
+    app.use('/worlds', router);
 };
 
 module.exports = attach;

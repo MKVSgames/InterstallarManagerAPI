@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
-const wordsRoute = require('./routes/game/words/words-route');
+const connector = require('./database/connector');
+const database = connector();
+const worldsRoute = require('./routes/game/words/worlds-route');
 
-wordsRoute(app);
+worldsRoute(app);
 
 const port = process.env.PORT || 5000;
 app.listen(port);

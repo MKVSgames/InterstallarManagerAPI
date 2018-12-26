@@ -1,5 +1,5 @@
 const controller = {
-    getAllWords: function(res) {
+    getAllWolrds: function(res) {
     }
 };
 
