@@ -1,5 +1,6 @@
 const controller = {
-    getAllWolrds: function(res) {
+    getAllWorlds: function(res) {
+        res.send([]);
     }
 };
 

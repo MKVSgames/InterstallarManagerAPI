@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
-const connector = require('./database/connector');
-const database = connector();
-const worldsRoute = require('./routes/game/words/worlds-route');
+const database = require('./database/connector');
+const worldsRoute = require('./routes/game/worlds/worlds-route');
 
 worldsRoute(app);
 

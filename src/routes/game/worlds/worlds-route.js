@@ -5,7 +5,7 @@ const attach = (app) => {
     const router = new Router();
     router
         .get('/', (req, res) => {
-            controller.getAllWords(res);
+            controller.getAllWorlds(res);
         });
     app.use('/worlds', router);
 };
