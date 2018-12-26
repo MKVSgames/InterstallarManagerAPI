@@ -20,6 +20,7 @@
   "dependencies": {
     "@types/mongodb": "^3.1.18",
     "express": "^4.16.4",
-    "mongodb": "^2.2.30"
+    "mongodb": "^2.2.30",
+    "nodemon": "^1.18.9"
   }
 }
