@@ -1,6 +1,12 @@
+const { to } = require('await-to-js');
+
 const controller = {
     getAllCompanies: async function(companyRepository) {
-        const companies = await companyRepository.getAllCompanies();
+        const [err, companies] = await to(companyRepository.getAllCompanies());
+        if(err) {
+            return err;
+        }
+
         return companies;
     }
 };

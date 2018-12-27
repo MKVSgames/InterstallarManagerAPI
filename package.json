@@ -21,6 +21,7 @@
   "dependencies": {
     "@types/eslint": "^4.16.5",
     "@types/mongodb": "^3.1.18",
+    "await-to-js": "^2.1.1",
     "eslint": "^5.11.0",
     "express": "^4.16.4",
     "mongodb": "^2.2.30",

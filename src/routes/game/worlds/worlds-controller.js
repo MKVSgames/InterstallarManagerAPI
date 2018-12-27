@@ -1,11 +1,21 @@
+const { to } = require('await-to-js');
+
 const controller = {
     getAllWorlds: async function(worldRepository) {
-        const worlds = await worldRepository.getAllWorlds();
+        const [err, worlds] = await to(worldRepository.getAllWorlds());
+        if(err) {
+            return err;
+        }
+
         return worlds;
     },
 
     addWorld: async function(worldRepository) {
-        const worlds = await worldRepository.addWorld({name: 'new world'});
+        const [err, worlds] = await to(worldRepository.addWorld({name: 'new world'}));
+        if(err) {
+            return err;
+        }
+
         return worlds;
     }
 };
