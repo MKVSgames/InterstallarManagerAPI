@@ -1,12 +1,12 @@
 const controller = {
-    getAllWorlds: async function(res, worldRepository) {
+    getAllWorlds: async function(worldRepository) {
         const worlds = await worldRepository.getAllWorlds();
-        res.send(worlds);
+        return worlds;
     },
 
-    addWorld: async function(res, worldRepository) {
+    addWorld: async function(worldRepository) {
         const worlds = await worldRepository.addWorld({name: 'new world'});
-        res.send(worlds);
+        return worlds;
     }
 };
 
